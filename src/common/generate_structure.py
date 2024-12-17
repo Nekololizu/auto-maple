@@ -1,18 +1,18 @@
 import os
 import json
 
-# Define the path to the comments file
-COMMENTS_FILE = "comments.json"
+# Define the path to the comments file (now in .settings folder)
+COMMENTS_FILE = os.path.join(os.path.dirname(__file__), "..", "..", ".settings", "comments.json")
 
-# Define the output file
-OUTPUT_FILE = os.path.join("docs", "folder_structure.txt")
+# Define the output file (relative to the new location of the script)
+OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "..", "docs", "folder_structure.txt")
 
 def load_comments():
     """
     Load comments from the JSON file, or create an empty dictionary if the file doesn't exist.
     """
     if os.path.exists(COMMENTS_FILE):
-        print(f"Loading existing comments from {COMMENTS_FILE}...")
+        #print(f"Loading existing comments from {COMMENTS_FILE}...")
         with open(COMMENTS_FILE, "r") as file:
             return json.load(file)
     else:
@@ -25,7 +25,7 @@ def save_comments(comments):
     """
     Save comments back to the JSON file.
     """
-    print(f"Saving comments to {COMMENTS_FILE}...")
+    #print(f"Saving comments to {COMMENTS_FILE}...")
     with open(COMMENTS_FILE, "w") as file:
         json.dump(comments, file, indent=4)
 
@@ -34,8 +34,8 @@ def get_current_files(base_dir="."):
     Traverse the directory and collect the current file structure, excluding specified files and folders.
     """
     # Define exclusions
-    EXCLUDED_DIRS = {"__pycache__", ".git", "node_modules", "venv", ".git"}  # Add more folders to exclude
-    EXCLUDED_FILES = {".DS_Store", "thumbs.db", ".gitignore"}  # Add specific files to exclude
+    EXCLUDED_DIRS = {"__pycache__", ".git", "node_modules", "venv", ".git", "logs"}  # Add more folders to exclude
+    EXCLUDED_FILES = {".DS_Store", "thumbs.db", ".gitignore", ".log"}  # Add specific files to exclude
 
     current_structure = {}
     for root, dirs, files in os.walk(base_dir):
@@ -126,4 +126,4 @@ def generate_and_save_structure():
     with open(OUTPUT_FILE, "w") as f:
         write_structure_to_file(current_structure, comments, f)
 
-    print(f"Folder structure has been written to '{OUTPUT_FILE}'.")
+    #print(f"Folder structure has been written to '{OUTPUT_FILE}'.")

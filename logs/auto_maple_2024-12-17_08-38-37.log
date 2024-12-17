@@ -1,0 +1,21 @@
+2024-12-17 08:38:37 - Loading existing comments from comments.json...
+2024-12-17 08:38:37 - Folder structure has been written to 'docs\folder_structure.txt'.
+2024-12-17 08:38:37 - Folder structure generated successfully.
+2024-12-17 08:38:39 - pygame 2.1.3 (SDL 2.0.22, Python 3.10.9)
+2024-12-17 08:38:39 - Hello from the pygame community. https://www.pygame.org/contribute.html
+2024-12-17 08:38:39 - [~] Started main bot loop
+2024-12-17 08:38:39 - [~] Initializing detection algorithm:
+2024-12-17 08:38:39 - [~] Initialized detection algorithm
+2024-12-17 08:38:39 - [~] Started video capture
+2024-12-17 08:38:39 - [~] Started notifier
+2024-12-17 08:38:39 - [~] Started keyboard listener
+2024-12-17 08:38:39 - [~] Successfully initialized Auto Maple
+2024-12-17 08:38:47 - [~] Saving key bindings to 'controls':
+2024-12-17 08:38:47 - ~  Successfully saved all key bindings
+2024-12-17 08:38:48 - [~] Saving key bindings to 'keybindings':
+2024-12-17 08:38:48 - ~  Successfully saved all key bindings
+2024-12-17 08:38:53 - [~] Loading command book 'kanna.py':
+2024-12-17 08:38:53 - ~  Successfully loaded command book 'kanna'
+2024-12-17 08:38:56 - [~] Loading routine 'lh6.csv':
+2024-12-17 08:38:56 - -  Created new Layout file at 'resources\layouts\kanna\lh6'.
+2024-12-17 08:38:56 - ~  Finished loading routine 'lh6'.

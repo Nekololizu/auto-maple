@@ -1,0 +1,9 @@
+2024-12-17 09:08:43 - pygame 2.1.3 (SDL 2.0.22, Python 3.10.9)
+2024-12-17 09:08:43 - Hello from the pygame community. https://www.pygame.org/contribute.html
+2024-12-17 09:08:43 - [~] Started main bot loop
+2024-12-17 09:08:43 - [~] Initializing detection algorithm:
+2024-12-17 09:08:43 - [~] Initialized detection algorithm
+2024-12-17 09:08:43 - [~] Started video capture
+2024-12-17 09:08:43 - [~] Started notifier
+2024-12-17 09:08:43 - [~] Started keyboard listener
+2024-12-17 09:08:43 - [~] Successfully initialized Auto Maple

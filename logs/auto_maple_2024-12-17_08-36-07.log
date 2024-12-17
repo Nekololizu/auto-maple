@@ -1,0 +1,12 @@
+2024-12-17 08:36:07 - Loading existing comments from comments.json...
+2024-12-17 08:36:07 - Folder structure has been written to 'docs\folder_structure.txt'.
+2024-12-17 08:36:07 - Folder structure generated successfully.
+2024-12-17 08:36:10 - pygame 2.1.3 (SDL 2.0.22, Python 3.10.9)
+2024-12-17 08:36:10 - Hello from the pygame community. https://www.pygame.org/contribute.html
+2024-12-17 08:36:10 - [~] Started main bot loop
+2024-12-17 08:36:10 - [~] Initializing detection algorithm:
+2024-12-17 08:36:10 - [~] Initialized detection algorithm
+2024-12-17 08:36:10 - [~] Started video capture
+2024-12-17 08:36:10 - [~] Started notifier
+2024-12-17 08:36:10 - [~] Started keyboard listener
+2024-12-17 08:36:10 - [~] Successfully initialized Auto Maple

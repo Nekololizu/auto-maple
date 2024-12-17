@@ -1,0 +1,5 @@
+2024-12-17 08:44:20 - Unhandled exception: Traceback (most recent call last):
+  File "C:\ProgramData\Archipelago\Players\auto-maple\main.py", line 10, in <module>
+    import generate_structure
+ModuleNotFoundError: No module named 'generate_structure'
+

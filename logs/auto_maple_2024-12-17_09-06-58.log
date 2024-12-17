@@ -1,0 +1,13 @@
+2024-12-17 09:06:58 - Import successful: generate_structure
+2024-12-17 09:06:58 - Loading existing comments from C:\ProgramData\Archipelago\Players\auto-maple\src\common\..\..\.settings\comments.json...
+2024-12-17 09:06:58 - Folder structure has been written to 'C:\ProgramData\Archipelago\Players\auto-maple\src\common\..\..\docs\folder_structure.txt'.
+2024-12-17 09:06:58 - Folder structure generated successfully.
+2024-12-17 09:07:00 - pygame 2.1.3 (SDL 2.0.22, Python 3.10.9)
+2024-12-17 09:07:00 - Hello from the pygame community. https://www.pygame.org/contribute.html
+2024-12-17 09:07:00 - [~] Started main bot loop
+2024-12-17 09:07:00 - [~] Initializing detection algorithm:
+2024-12-17 09:07:00 - [~] Initialized detection algorithm
+2024-12-17 09:07:00 - [~] Started video capture
+2024-12-17 09:07:00 - [~] Started notifier
+2024-12-17 09:07:00 - [~] Started keyboard listener
+2024-12-17 09:07:00 - [~] Successfully initialized Auto Maple

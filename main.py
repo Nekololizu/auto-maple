@@ -1,27 +1,26 @@
 """The central program that ties all the modules together."""
-
+from src.common import logger
 import os
 import sys
 import time
 
-# Add the utils folder to the system path so we can import from it
-sys.path.append(os.path.join(os.path.dirname(__file__), 'utils'))
+# Try importing the generate_structure script directly
+try:
+    from src.common.generate_structure import generate_and_save_structure
+except ImportError as e:
+    print(f"Error importing generate_structure: {e}")
+
+# Generate folder structure before starting the main bot logic
+try:
+    generate_and_save_structure()  # Generate the folder structure and comments
+except Exception as e:
+    print(f"Error generating folder structure: {e}")
 
 from src.modules.bot import Bot
 from src.modules.capture import Capture
 from src.modules.notifier import Notifier
 from src.modules.listener import Listener
 from src.modules.gui import GUI
-
-# Import the generate_structure script from utils
-import generate_structure
-
-# Generate folder structure before starting the main bot logic
-try:
-    generate_structure.generate_and_save_structure()  # Assuming you create this function
-    print("Folder structure generated successfully.")
-except Exception as e:
-    print(f"Error generating folder structure: {e}")
 
 bot = Bot()
 capture = Capture()

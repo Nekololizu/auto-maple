@@ -1,10 +1,10 @@
-|   comments.json  # Stores comments, metadata, and development notes.
 |   LICENSE  # Licensing information for the project.
 |   main.py  # Entry point of the application.
 |   README.md  # Project overview, setup instructions, and usage details.
 |   requirements.txt  # List of Python dependencies required for the project.
 |   run_main.bat  # Batch file to run the application on Windows.
 +---.settings/
+    |   comments.json  # Stores comments, metadata, and development notes.
     |   controls  # Contains settings related to control schemes.
     |   keybindings  # Stores custom keybinding configurations.
     |   pets  # Settings for pet-related features in the application.
@@ -48,7 +48,9 @@
                 |   kanna  # Keybinding resources for Kanna.
     +---common/
         |   config.py  # Handles configuration loading and parsing.
+        |   generate_structure.py  # Script to generate and manage the folder structure dynamically.
         |   interfaces.py  # Defines shared interfaces and abstractions.
+        |   logger.py  # Captures and logs all print output, error messages, and uncaught exceptions.
         |   settings.py  # Manages global application settings.
         |   utils.py  # Common utility functions used across the project.
         |   vkeys.py  # Virtual key mapping for simulating keyboard inputs.
@@ -90,4 +92,3 @@
         |   layout.py  # Handles layout configurations for routines.
         |   routine.py  # Main routine management logic.
 +---utils/
-    |   generate_structure.py  # Script to generate and manage the folder structure dynamically.

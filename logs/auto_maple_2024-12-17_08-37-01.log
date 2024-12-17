@@ -1,0 +1,13 @@
+2024-12-17 08:37:01 - Loading existing comments from comments.json...
+2024-12-17 08:37:01 - Folder structure has been written to 'docs\folder_structure.txt'.
+2024-12-17 08:37:01 - Folder structure generated successfully.
+2024-12-17 08:37:01 - Unhandled exception: Traceback (most recent call last):
+  File "C:\ProgramData\Archipelago\Players\auto-maple\main.py", line 18, in <module>
+    from src.modules.bot import Bot
+  File "C:\ProgramData\Archipelago\Players\auto-maple\src\modules\bot.py", line 12, in <module>
+    from src.detection import detection
+  File "C:\ProgramData\Archipelago\Players\auto-maple\src\detection\detection.py", line 12
+    -def load_model():
+     ^^^
+SyntaxError: invalid syntax
+
