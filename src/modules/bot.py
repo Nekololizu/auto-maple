@@ -61,7 +61,6 @@ class Bot(Configurable):
         :return:    None
         """
 
-        self.update_submodules()
         print('\n[~] Started main bot loop')
         self.thread.start()
 
@@ -72,7 +71,7 @@ class Bot(Configurable):
         """
 
         print('\n[~] Initializing detection algorithm:\n')
-        model = detection.load_model()
+        #model = detection.load_model()
         print('\n[~] Initialized detection algorithm')
 
         self.ready = True
@@ -227,43 +226,3 @@ class Bot(Configurable):
         #     print(f" ~  Successfully loaded command book '{module_name}'")
         # else:
         #     print(f" !  Command book '{module_name}' was not loaded")
-
-    def update_submodules(self, force=False):
-        """
-        Pulls updates from the submodule repositories. If FORCE is True,
-        rebuilds submodules by overwriting all local changes.
-        """
-
-        utils.print_separator()
-        print('[~] Retrieving latest submodules:')
-        self.submodules = []
-        repo = git.Repo.init()
-        with open('.gitmodules', 'r') as file:
-            lines = file.readlines()
-            i = 0
-            while i < len(lines):
-                if lines[i].startswith('[') and i < len(lines) - 2:
-                    path = lines[i + 1].split('=')[1].strip()
-                    url = lines[i + 2].split('=')[1].strip()
-                    self.submodules.append(path)
-                    try:
-                        repo.git.clone(url, path)       # First time loading submodule
-                        print(f" -  Initialized submodule '{path}'")
-                    except git.exc.GitCommandError:
-                        sub_repo = git.Repo(path)
-                        if not force:
-                            sub_repo.git.stash()        # Save modified content
-                        sub_repo.git.fetch('origin', 'main')
-                        sub_repo.git.reset('--hard', 'FETCH_HEAD')
-                        if not force:
-                            try:                # Restore modified content
-                                sub_repo.git.checkout('stash', '--', '.')
-                                print(f" -  Updated submodule '{path}', restored local changes")
-                            except git.exc.GitCommandError:
-                                print(f" -  Updated submodule '{path}'")
-                        else:
-                            print(f" -  Rebuilt submodule '{path}'")
-                        sub_repo.git.stash('clear')
-                    i += 3
-                else:
-                    i += 1

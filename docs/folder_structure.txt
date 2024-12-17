@@ -1,0 +1,95 @@
+|   .gitignore  # 
+|   .gitmodules  # 
+|   comments.json  # 
+|   main.py  # 
+|   README.md  # 
+|   requirements.txt  # 
+|   run_main.bat  # 
++---.settings/
+    |   controls  # 
+    |   keybindings  # 
+    |   pets  # 
++---assets/
+    |   elite_template.jpg  # 
+    |   icon.ico  # 
+    |   icon.png  # 
+    |   label_map.pbtxt  # 
+    |   minimap_br_template.png  # 
+    |   minimap_tl_template.png  # 
+    |   other_template.png  # 
+    |   player_template.png  # 
+    |   rune_buff_template.jpg  # 
+    |   rune_template.png  # 
+    +---alerts/
+        |   ding.mp3  # 
+        |   rune_appeared.mp3  # 
+        |   siren.mp3  # 
++---docs/
+    |   folder_structure.txt  # 
++---resources/
+    |   LICENSE  # 
+    +---command_books/
+        |   kanna.py  # 
+    +---keybindings/
+        |   kanna  # 
+    +---layouts/
+        +---kanna/
+            |   dcup2  # 
+    +---routines/
+        +---kanna/
+            |   cf1.csv  # 
+            |   dcup2.csv  # 
+            |   lh6.csv  # 
+            |   mts3.csv  # 
+            |   os3.csv  # 
++---src/
+    +---command_book/
+        |   command_book.py  # 
+        +---resources/
+            +---keybindings/
+                |   kanna  # 
+    +---common/
+        |   config.py  # 
+        |   interfaces.py  # 
+        |   settings.py  # 
+        |   utils.py  # 
+        |   vkeys.py  # 
+    +---detection/
+        |   detection.py  # 
+    +---gui/
+        |   interfaces.py  # 
+        |   __init__.py  # 
+        +---edit/
+            |   commands.py  # 
+            |   components.py  # 
+            |   controls.py  # 
+            |   main.py  # 
+            |   minimap.py  # 
+            |   record.py  # 
+            |   routine.py  # 
+            |   status.py  # 
+        +---menu/
+            |   file.py  # 
+            |   main.py  # 
+            |   update.py  # 
+        +---settings/
+            |   main.py  # 
+            |   pets.py  # 
+        +---view/
+            |   details.py  # 
+            |   main.py  # 
+            |   minimap.py  # 
+            |   routine.py  # 
+            |   status.py  # 
+    +---modules/
+        |   bot.py  # 
+        |   capture.py  # 
+        |   gui.py  # 
+        |   listener.py  # 
+        |   notifier.py  # 
+    +---routine/
+        |   components.py  # 
+        |   layout.py  # 
+        |   routine.py  # 
++---utils/
+    |   generate_structure.py  # 
