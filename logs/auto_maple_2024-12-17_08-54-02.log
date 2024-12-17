@@ -1,5 +1,0 @@
-2024-12-17 08:54:02 - Unhandled exception: Traceback (most recent call last):
-  File "C:\ProgramData\Archipelago\Players\auto-maple\main.py", line 9, in <module>
-    from src.common.generate_structure import generate_and_save_structure
-ImportError: cannot import name 'generate_and_save_structure' from 'src.common.generate_structure' (C:\ProgramData\Archipelago\Players\auto-maple\src\common\generate_structure.py)
-

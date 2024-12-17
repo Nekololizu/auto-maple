@@ -1,6 +1,8 @@
 __pycache__/
 assets/models/
 .idea/
+logs
+.log
 .settings/
 *.iml
 resources/command_books/__pycache__
